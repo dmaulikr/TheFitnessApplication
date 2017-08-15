@@ -1,9 +1,8 @@
 # TheFitnessApplication
 Swift based iOs application
-
-
-/r/n
-
+  
+  
+  
 The Fitness Application is the one and only application that will bring your fitness results to an higher level.
 
 Question:
