@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MainTableViewCell" id="v9e-c5-L1Q" customClass="MainTableViewCell" customModule="SwiftOverload" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="v9e-c5-L1Q" id="sbX-bk-1GB">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Njh-sv-C2j">
+                        <rect key="frame" x="20" y="8" width="211" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="28" id="Jcb-4V-C8D"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TBx-h5-TPo">
+                        <rect key="frame" x="239" y="8" width="116" height="28"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="28" id="XDa-VR-FmP"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XMV-iD-1DB">
+                        <rect key="frame" x="355" y="11" width="0.0" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="TBx-h5-TPo" secondAttribute="trailing" constant="20" id="1Zg-p7-ilM"/>
+                    <constraint firstItem="TBx-h5-TPo" firstAttribute="centerY" secondItem="sbX-bk-1GB" secondAttribute="centerY" id="5fr-6N-9Nb"/>
+                    <constraint firstItem="Njh-sv-C2j" firstAttribute="leading" secondItem="sbX-bk-1GB" secondAttribute="leading" constant="20" id="C8i-rV-hw1"/>
+                    <constraint firstItem="XMV-iD-1DB" firstAttribute="top" secondItem="sbX-bk-1GB" secondAttribute="topMargin" constant="3" id="J0l-c4-Zoh"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="XMV-iD-1DB" secondAttribute="trailing" constant="12" id="LfX-EV-zge"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="XMV-iD-1DB" secondAttribute="bottom" constant="3.5" id="QdE-9z-GFm"/>
+                    <constraint firstItem="TBx-h5-TPo" firstAttribute="bottom" secondItem="Njh-sv-C2j" secondAttribute="bottom" id="bWX-SS-41n"/>
+                    <constraint firstItem="TBx-h5-TPo" firstAttribute="top" secondItem="Njh-sv-C2j" secondAttribute="top" id="iAu-SV-e8Y"/>
+                    <constraint firstItem="TBx-h5-TPo" firstAttribute="leading" secondItem="sbX-bk-1GB" secondAttribute="leading" constant="239" id="o4k-IB-l2S"/>
+                    <constraint firstItem="TBx-h5-TPo" firstAttribute="leading" secondItem="Njh-sv-C2j" secondAttribute="trailing" constant="8" symbolic="YES" id="yOL-co-u4u"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cellLabel" destination="Njh-sv-C2j" id="Xj5-GU-9L4"/>
+                <outlet property="cellSubLabel" destination="XMV-iD-1DB" id="8w4-cR-kaT"/>
+                <outlet property="cellView" destination="TBx-h5-TPo" id="Dqw-Jd-QRg"/>
+            </connections>
+            <point key="canvasLocation" x="81.5" y="-34"/>
+        </tableViewCell>
+    </objects>
+</document>
